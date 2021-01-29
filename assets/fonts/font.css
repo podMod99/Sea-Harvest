@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'GT-Pressura-Mono-Regular';
+  src: url('GT-Pressura-Mono-Regular.eot');
+  src: url('GT-Pressura-Mono-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GTPressuraMonoTrial-Regular';
+  src: url('GTPressuraMonoTrial-Regular.svg#GTPressuraMonoTrial-Regular') format('svg'),
+       url('GTPressuraMonoTrial-Regular.ttf') format('truetype'),
+       url('GTPressuraMonoTrial-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
