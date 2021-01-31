@@ -57,8 +57,8 @@
 
 body {
   font-family: GT Pressura Mono Regular, monospace;
-  /* background: #fffcf9 url(../assets/img/background.jpg); */
-  /* background-repeat: repeat; */
+  background: #fffcf9 url(../assets/img/background.jpg);
+  background-repeat: repeat;
   margin: 0;
   font-weight: 400;
   font-size: 1rem;
@@ -278,4 +278,23 @@ nav ul li a {
   font-size: 3rem;
   line-height: 0.85714286;
   font-family: Portrait Light, serif;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 91.66666667%;
+  padding-left: 8.33333333%;
+}
+
+.contactHeading {
+  margin: 0;
+  font-size: 1.2857142857142858rem;
+  line-height: 1.33333333;
+  font-weight: 700;
+}
+
+.contactText {
+  margin: 0;
 }
