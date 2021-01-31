@@ -57,8 +57,8 @@
 
 body {
   font-family: GT Pressura Mono Regular, monospace;
-  background: #fffcf9 url(../assets/img/background.jpg);
-  background-repeat: repeat;
+  /* background: #fffcf9 url(../assets/img/background.jpg); */
+  /* background-repeat: repeat; */
   margin: 0;
   font-weight: 400;
   font-size: 1rem;
@@ -136,6 +136,7 @@ nav ul li a {
 }
 
 /* main content */
+/* catch of the day */
 #siteInner {
   box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
 }
@@ -177,6 +178,7 @@ nav ul li a {
   text-align: right;
 }
 
+/* holiday hrs */
 .holidayHours {
   box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
   padding: 1.42857143rem;
@@ -185,7 +187,7 @@ nav ul li a {
 }
 
 .border {
-  border: 3px dashed;
+  border: 2px dashed;
   padding: 1.42857143rem;
 }
 
@@ -252,4 +254,28 @@ nav ul li a {
   height: 1.25em;
   margin: 0 4px;
   flex-grow: 1;
+}
+
+/* get in touch */
+.getInTouch {
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+  padding: 1.42857143rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.getInTouchImg {
+  filter: brightness(90%) grayscale(100%) contrast(130%);
+  transition: filter 0.9s;
+  -webkit-user-drag: none;
+  width: 100%;
+  margin-bottom: 1.42857143rem;
+}
+
+.getInTouchTitle {
+  margin: 0;
+  margin-bottom: 1.85714286rem;
+  font-size: 3rem;
+  line-height: 0.85714286;
+  font-family: Portrait Light, serif;
 }

@@ -112,7 +112,7 @@ function setActiveBtn(element) {
                   Wed 23 Dec
                 </span>
                 <span class="dots"></span>
-                <span class="hours"> 8:00am-5:30pm </span>
+                <span class="hours"> 6:00am-5:30pm </span>
               </div>
               <div class="row">
                 <span class="date" title="Thursday 30th of December 2021">
