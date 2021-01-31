@@ -15,11 +15,44 @@
       format('svg');
 }
 
+@import url(//db.onlinewebfonts.com/c/198bf5583f9f075a77b457c54a24b02b?family=GT+Pressura+Mono+Light);
+@font-face {
+  font-family: 'GT Pressura Mono Light';
+  src: url('//db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.eot');
+  src: url('//db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/198bf5583f9f075a77b457c54a24b02b.svg#GT Pressura Mono Light')
+      format('svg');
+}
+
+@import url(//db.onlinewebfonts.com/c/6d126d1cf218a43fb9548319f5824445?family=Portrait+Light);
+@font-face {
+  font-family: 'Portrait Light';
+  src: url('//db.onlinewebfonts.com/t/6d126d1cf218a43fb9548319f5824445.eot');
+  src: url('//db.onlinewebfonts.com/t/6d126d1cf218a43fb9548319f5824445.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/6d126d1cf218a43fb9548319f5824445.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/6d126d1cf218a43fb9548319f5824445.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/6d126d1cf218a43fb9548319f5824445.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/6d126d1cf218a43fb9548319f5824445.svg#Portrait Light')
+      format('svg');
+}
+
 * {
   box-sizing: border-box;
 }
 :root {
   --primary-color: #005a87;
+  font-size: 14px;
 }
 
 body {
@@ -56,9 +89,9 @@ a {
 
 .date {
   margin-top: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.42857143;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.57142857rem;
   text-transform: uppercase;
 }
 
@@ -66,15 +99,12 @@ a {
   width: 100%;
   margin: 0;
   padding: 0 4vw;
-  font-size: 2em;
 }
 
 .siteDescription {
   margin: 0;
-  line-height: 0.9;
-  letter-spacing: -0.015em;
-  font-size: 1.35em;
-  margin-bottom: 0.35em;
+  line-height: 1.42857143;
+  font-size: 1.5em;
 }
 
 nav ul {
@@ -95,12 +125,109 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.1rem;
+  font-size: 1.2857142857142858rem;
   line-height: 1.33333333;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
-  padding: 16px 0px;
+  padding: 16px 20px;
   margin: 0;
   position: relative;
+}
+
+/* main content */
+#siteInner {
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.articleWrapper {
+  padding: 2.28571429rem;
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.articleHeader {
+  margin-bottom: 26px;
+}
+
+.articleTitle {
+  margin: 0;
+  font-size: 3.4285714285714284rem;
+  line-height: 0.75;
+  font-family: Portrait Light, serif;
+}
+
+.articleSubtitle {
+  font-family: GT Pressura Mono Light;
+  margin: 0;
+  line-height: 1.71428571;
+}
+
+.articleImg {
+  filter: brightness(90%) grayscale(100%) contrast(130%);
+  transition: filter 0.9s;
+  -webkit-user-drag: none;
+  width: 100%;
+}
+
+.articleBody p {
+  margin: 0;
+}
+
+.articleFooter {
+  text-align: right;
+}
+
+.holidayHours {
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+  padding: 1.42857143rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.border {
+  border: 3px dashed;
+  padding: 1.42857143rem;
+}
+
+.border .articleTitle {
+  margin-bottom: 8px;
+  font-size: 3rem;
+  line-height: 0.85714286;
+}
+
+.holidayHoursImg {
+  filter: brightness(90%) grayscale(100%) contrast(130%);
+  transition: filter 0.9s;
+  -webkit-user-drag: none;
+  width: 80%;
+}
+
+.locationBtns {
+  width: 100%;
+  display: flex;
+  border: 2px solid #231f20;
+  margin: 10px 0;
+}
+
+#locationBtnActive {
+  background: #231f20;
+  color: #fffcf9;
+  width: 50%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1428571428571428rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#locationBtn {
+  width: 50%;
+  padding: 10px;
+  color: #231f20;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1428571428571428rem;
+  line-height: 1;
+  cursor: pointer;
 }

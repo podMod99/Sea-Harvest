@@ -14,7 +14,26 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="//db.onlinewebfonts.com/c/198bf5583f9f075a77b457c54a24b02b?family=GT+Pressura+Mono+Light"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/6d126d1cf218a43fb9548319f5824445?family=Portrait+Light"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      function setActiveBtn(element) {
+        if (element.id === 'locationBtn') {
+          document.getElementById('locationBtnActive').id = 'locationBtn';
+          element.id = 'locationBtnActive';
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -22,7 +41,7 @@
       <header id="siteHeader">
         <section class="headerBanner">
           <a href="/">
-            <p class="date">FRIDAY, JANUARY 29, 2021</p>
+            <p class="date">SATURDAY, JANUARY 30, 2021</p>
             <h1 class="siteTitle">
               <span class="site-logo"
                 ><svg
@@ -85,6 +104,51 @@
           </ul>
         </nav>
       </header>
+      <section id="siteInner">
+        <div class="articleWrapper">
+          <a class="article" href="/">
+            <div class="articleHeader">
+              <h3 class="articleTitle">CATCH OF THE DAY</h3>
+              <p class="articleSubtitle">FROM SEA TO PLATE</p>
+            </div>
+            <div class="articleBody">
+              <img
+                class="articleImg"
+                src="assets/img/salmon.png"
+                alt="Salmon"
+              />
+              <p>
+                The latest harvest has yielded deliciously fresh seafood perfect
+                for devouring on its own or as part of a scrumptious recipe.
+                Here’s a seasonal favourite...
+              </p>
+            </div>
+            <div class="articleFooter">
+              <span>Read more on page 5</span>
+            </div>
+          </a>
+        </div>
+        <div class="holidayHours">
+          <div class="border">
+            <h3 class="articleTitle">HOLIDAY HRS</h3>
+            <br />
+            <img
+              class="holidayHoursImg"
+              src="/assets/img/pocketWatch.png"
+              alt="pocket watch"
+            />
+            <br />
+            <div class="locationBtns">
+              <div id="locationBtnActive" onclick="setActiveBtn(this)">
+                Belconnen
+              </div>
+              <div id="locationBtn" onclick="setActiveBtn(this)">Fyshwick</div>
+            </div>
+            <div id="holidayHoursBodyActive"></div>
+            <div id="holidayHoursBody"></div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
