@@ -340,3 +340,24 @@ nav ul li a {
 .articleImgFreshAsItGets {
   margin-bottom: 30px;
 }
+
+/* footer */
+.siteFooter {
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.footerBanner {
+  text-align: center;
+  padding: 16px;
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+}
+
+.footerItem {
+  box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+  text-align: center;
+  display: block;
+  padding: 14px 20px;
+  font-size: 1.1428571428571428rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
