@@ -298,3 +298,33 @@ nav ul li a {
 .contactText {
   margin: 0;
 }
+
+/* StraightFromTheSource */
+.articleWrapperAlt {
+  padding: 1.42857143rem;
+}
+
+.articleHeaderAlt {
+  margin-bottom: 10px;
+}
+
+.articleTitleAlt {
+  font-size: 3rem;
+  line-height: 0.85714286;
+}
+
+.articleImgStraightFromTheSource {
+  width: 50%;
+  float: right;
+  margin-top: -5rem;
+}
+
+/* TheSeaHarvestStory (shares alot of styles with article and article alt)*/
+.articleImgTheSeaHarvestStory {
+  margin-bottom: 30px;
+}
+
+/* BatemansBayFishingTips */
+.articleImgBatemansBayFishingTips {
+  margin-bottom: 30px;
+}
