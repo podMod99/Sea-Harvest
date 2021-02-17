@@ -1,3 +1,77 @@
+function setDate() {
+  const formatDate = () => {
+    switch (new Date().getDay()) {
+      case 0:
+        day = 'SUNDAY, ';
+        break;
+      case 1:
+        day = 'MONDAY, ';
+        break;
+      case 2:
+        day = 'TUESDAY, ';
+        break;
+      case 3:
+        day = 'WEDNESDAY, ';
+        break;
+      case 4:
+        day = 'THURSDAY, ';
+        break;
+      case 5:
+        day = 'FRIDAY, ';
+        break;
+      case 6:
+        day = 'SATURDAY, ';
+    }
+
+    switch (new Date().getMonth()) {
+      case 0:
+        month = 'JANUARY ';
+        break;
+      case 1:
+        month = 'FEBRUARY ';
+        break;
+      case 2:
+        month = 'MARCH ';
+        break;
+      case 3:
+        month = 'APRIL ';
+        break;
+      case 4:
+        month = 'MAY ';
+        break;
+      case 5:
+        month = 'JUNE ';
+        break;
+      case 6:
+        month = 'JULY ';
+        break;
+      case 7:
+        month = 'AUGUST ';
+        break;
+      case 8:
+        month = 'SEPTEMBER ';
+        break;
+      case 9:
+        month = 'OCTOBER ';
+        break;
+      case 10:
+        month = 'NOVEMBER ';
+        break;
+      case 11:
+        month = 'DECEMBER ';
+        break;
+    }
+
+    const dayOfMonth = new Date().getDate() + ', ';
+
+    const year = new Date().getFullYear();
+
+    return day + month + dayOfMonth + year;
+  };
+
+  document.getElementById('headerDate').innerHTML = formatDate();
+}
+
 function setActiveBtn(element) {
   if (element.id === 'locationBtn') {
     document.getElementById('locationBtnActive').id = 'locationBtn';

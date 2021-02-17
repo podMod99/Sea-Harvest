@@ -29,12 +29,12 @@
     <script src="/js/main.js"></script>
   </head>
 
-  <body>
+  <body onload="setDate()">
     <div id="siteWrapper">
       <header id="siteHeader">
         <section class="headerBanner">
           <a href="/">
-            <p class="headerDate">SATURDAY, JANUARY 30, 2021</p>
+            <p id="headerDate"></p>
             <h1 class="siteTitle">
               <span class="site-logo"
                 ><svg
