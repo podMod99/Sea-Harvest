@@ -87,9 +87,17 @@ a {
   box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
 }
 
-.headerBanner :hover {
-  color: #005a87;
+.headerBanner:hover {
+  color: #26498d;
 }
+
+.headerBanner:hover .logoText {
+  fill: #26498d;
+}
+
+/* .logoText :hover {
+  fill: #26498d;
+} */
 
 #headerDate {
   margin-top: 0;
